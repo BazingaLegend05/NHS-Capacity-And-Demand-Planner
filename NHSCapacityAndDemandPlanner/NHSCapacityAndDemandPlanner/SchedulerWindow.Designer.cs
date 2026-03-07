@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             BackButton = new Button();
+            DynamicTable = new DataGridView();
+            TableTitle = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)DynamicTable).BeginInit();
             SuspendLayout();
             // 
             // BackButton
@@ -40,28 +43,51 @@
             BackButton.TabIndex = 0;
             BackButton.Text = "Back";
             BackButton.UseVisualStyleBackColor = true;
-            BackButton.Click += this.BackButton_Click;
+            BackButton.Click += BackButton_Click;
+            // 
+            // DynamicTable
+            // 
+            DynamicTable.Anchor = AnchorStyles.None;
+            DynamicTable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DynamicTable.Location = new Point(12, 135);
+            DynamicTable.Name = "DynamicTable";
+            DynamicTable.Size = new Size(1160, 512);
+            DynamicTable.TabIndex = 3;
+            DynamicTable.CellContentClick += DynamicTable_CellContentClick;
+            // 
+            // TableTitle
+            // 
+            TableTitle.BorderStyle = BorderStyle.None;
+            TableTitle.Font = new Font("Segoe UI", 15.75F, FontStyle.Underline, GraphicsUnit.Point, 0);
+            TableTitle.Location = new Point(12, 91);
+            TableTitle.Name = "TableTitle";
+            TableTitle.ReadOnly = true;
+            TableTitle.Size = new Size(229, 28);
+            TableTitle.TabIndex = 2;
+            TableTitle.Text = "Clinician Timetable";
+            TableTitle.TextChanged += TableTitle_TextChanged;
             // 
             // SchedulerWindow
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
             ClientSize = new Size(1184, 761);
+            Controls.Add(DynamicTable);
+            Controls.Add(TableTitle);
             Controls.Add(BackButton);
             MinimumSize = new Size(1200, 800);
             Name = "SchedulerWindow";
             Text = "Scheduler";
-            Load += this.SchedulerWindow_Load;
+            Load += SchedulerWindow_Load;
+            ((System.ComponentModel.ISupportInitialize)DynamicTable).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
-
-        private void SchedulerWindow_Load(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
-
         #endregion
 
         private Button BackButton;
+        private DataGridView DynamicTable;
+        private TextBox TableTitle;
     }
 }

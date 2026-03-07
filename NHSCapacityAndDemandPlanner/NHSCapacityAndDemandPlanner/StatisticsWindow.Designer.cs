@@ -55,10 +55,6 @@
             ResumeLayout(false);
         }
 
-        private void StatisticsWindow_Load(object sender, EventArgs e)
-        {
-            throw new NotImplementedException();
-        }
 
         #endregion
 

@@ -20,3 +20,10 @@ C:\Users\User\source\repos\BazingaLegend05\NHS-Capacity-And-Demand-Planner\NHSCa
 C:\Users\User\source\repos\BazingaLegend05\NHS-Capacity-And-Demand-Planner\NHSCapacityAndDemandPlanner\NHSCapacityAndDemandPlanner\obj\Debug\net8.0-windows\NHSCapacityAndDemandPlanner.SplashWindow.resources
 C:\Users\User\source\repos\BazingaLegend05\NHS-Capacity-And-Demand-Planner\NHSCapacityAndDemandPlanner\NHSCapacityAndDemandPlanner\obj\Debug\net8.0-windows\NHSCapacityAndDemandPlanner.SchedulerWindow.resources
 C:\Users\User\source\repos\BazingaLegend05\NHS-Capacity-And-Demand-Planner\NHSCapacityAndDemandPlanner\NHSCapacityAndDemandPlanner\obj\Debug\net8.0-windows\NHSCapacityAndDemandPlanner.StatisticsWindow.resources
+C:\Users\User\source\repos\BazingaLegend05\NHS-Capacity-And-Demand-Planner\NHSCapacityAndDemandPlanner\NHSCapacityAndDemandPlanner\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+C:\Users\User\source\repos\BazingaLegend05\NHS-Capacity-And-Demand-Planner\NHSCapacityAndDemandPlanner\NHSCapacityAndDemandPlanner\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+C:\Users\User\source\repos\BazingaLegend05\NHS-Capacity-And-Demand-Planner\NHSCapacityAndDemandPlanner\NHSCapacityAndDemandPlanner\bin\Debug\net8.0-windows\System.Text.Json.dll
+C:\Users\User\source\repos\BazingaLegend05\NHS-Capacity-And-Demand-Planner\NHSCapacityAndDemandPlanner\NHSCapacityAndDemandPlanner\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\User\source\repos\BazingaLegend05\NHS-Capacity-And-Demand-Planner\NHSCapacityAndDemandPlanner\NHSCapacityAndDemandPlanner\obj\Debug\net8.0-windows\NHSCapacityAndDemandPlanner.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\BazingaLegend05\NHS-Capacity-And-Demand-Planner\NHSCapacityAndDemandPlanner\NHSCapacityAndDemandPlanner\obj\Debug\net8.0-windows\NHSCapac.F91CF9A6.Up2Date
+C:\Users\User\source\repos\BazingaLegend05\NHS-Capacity-And-Demand-Planner\NHSCapacityAndDemandPlanner\NHSCapacityAndDemandPlanner\bin\Debug\net8.0-windows\JSONdata\ClinicianTimeTableWeek1.json

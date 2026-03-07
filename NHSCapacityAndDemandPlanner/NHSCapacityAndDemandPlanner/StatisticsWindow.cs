@@ -16,7 +16,10 @@ namespace NHSCapacityAndDemandPlanner
         {
             InitializeComponent();
         }
+        private void StatisticsWindow_Load(object sender, EventArgs e)
+        {
 
+        }
         private void BackButton_Click(object sender, EventArgs e)
         {
             HomeWindow homeWindow = new HomeWindow();

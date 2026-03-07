@@ -84,6 +84,16 @@
             the contents of this method with the code editor.
             </summary>
         </member>
+        <member name="T:NHSCapacityAndDemandPlanner.WriteTable">
+            <summary>
+            Universal class to write to the table using the json files provided.
+            </summary>
+        </member>
+        <member name="T:NHSCapacityAndDemandPlanner.ReadJSON">
+            <summary>
+            Retreives data from the json files and converts it into a 2D array that can be used to write to the table.
+            </summary>
+        </member>
         <member name="F:NHSCapacityAndDemandPlanner.SplashWindow.components">
             <summary>
              Required designer variable.

@@ -45,6 +45,7 @@
             richTextBox1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             richTextBox1.Location = new Point(103, 105);
             richTextBox1.Name = "richTextBox1";
+            richTextBox1.ReadOnly = true;
             richTextBox1.RightToLeft = RightToLeft.No;
             richTextBox1.Size = new Size(966, 151);
             richTextBox1.TabIndex = 0;

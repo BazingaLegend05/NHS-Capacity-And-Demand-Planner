@@ -1,0 +1,98 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+  
+    "clinitianTimeTableWeek1":[
+    {
+      "Clinician": "1",
+      "Monday AM": "null",
+      "Monday PM": "null",
+      "Tuesday AM": "study leave",
+      "Tuesday PM": "study leave",
+      "Wednesday AM": "null",
+      "Wednesday PM": "null",
+      "Thursday AM": "annual leave",
+      "Thursday PM": "annual leave",
+      "Friday AM": "annual leave",
+      "Friday PM": "annual leave",
+      "Saturday AM": "annual leave",
+      "Saturday PM": "annual leave",
+      "Sunday AM": "annual leave",
+      "Sunday PM": "annual leave"
+    },
+    {
+      "Clinician": "2",
+      "Monday AM": "annual leave",
+      "Monday PM": "annual leave",
+      "Tuesday AM": "annual leave",
+      "Tuesday PM": "annual leave",
+      "Wednesday AM": "annual leave",
+      "Wednesday PM": "annual leave",
+      "Thursday AM": "annual leave",
+      "Thursday PM": "annual leave",
+      "Friday AM": "annual leave",
+      "Friday PM": "annual leave",
+      "Saturday AM": "annual leave",
+      "Saturday PM": "annual leave",
+      "Sunday AM": "annual leave",
+      "Sunday PM": "annual leave"
+    },
+    {
+      "Clinician": "3",
+      "Monday AM": "annual leave",
+      "Monday PM": "annual leave",
+      "Tuesday AM": "annual leave",
+      "Tuesday PM": "annual leave",
+      "Wednesday AM": "annual leave",
+      "Wednesday PM": "annual leave",
+      "Thursday AM": "annual leave",
+      "Thursday PM": "annual leave",
+      "Friday AM": "annual leave",
+      "Friday PM": "annual leave",
+      "Saturday AM": "null",
+      "Saturday PM": "null",
+      "Sunday AM": "null",
+      "Sunday PM": "null"
+    },
+      {
+        "Clinician": "4",
+        "Monday AM": "MnNew",
+        "Monday PM": "MwRev",
+        "Tuesday AM": "null",
+        "Tuesday PM": "null",
+        "Wednesday AM": "MWM",
+        "Wednesday PM": "null",
+        "Thursday AM": "null",
+        "Thursday PM": "null",
+        "Friday AM": "Theatre",
+        "Friday PM": "null",
+        "Saturday AM": "null",
+        "Saturday PM": "null",
+        "Sunday AM": "null",
+        "Sunday PM": "null"
+      },
+      {
+        "Clinician": "5",
+        "Monday AM": "null",
+        "Monday PM": "null",
+        "Tuesday AM": "null",
+        "Tuesday PM": "null",
+        "Wednesday AM": "null",
+        "Wednesday PM": "MwWed",
+        "Thursday AM": "Theatre",
+        "Thursday PM": "null",
+        "Friday AM": "MwFri",
+        "Friday PM": "null",
+        "Saturday AM": "null",
+        "Saturday PM": "null",
+        "Sunday AM": "null",
+        "Sunday PM": "null"
+      }
+    ]
+}

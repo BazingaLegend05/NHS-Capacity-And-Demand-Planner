@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "FNbxqxiLAn8=",
+  "dgSpecHash": "eLrI34Z3iuQ=",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\source\\repos\\BazingaLegend05\\NHS-Capacity-And-Demand-Planner\\NHSCapacityAndDemandPlanner\\NHSCapacityAndDemandPlanner\\NHSCapacityAndDemandPlanner.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\system.io.pipelines\\10.0.3\\system.io.pipelines.10.0.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.text.encodings.web\\10.0.3\\system.text.encodings.web.10.0.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\system.text.json\\10.0.3\\system.text.json.10.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

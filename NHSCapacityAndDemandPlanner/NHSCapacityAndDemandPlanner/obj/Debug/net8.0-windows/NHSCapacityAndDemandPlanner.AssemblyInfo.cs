@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NHSCapacityAndDemandPlanner")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16eff0024605afdd73e688ae86fa47166dd3811f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5b8c02c80c93cd7eb5374862d6c885a82b6dac24")]
 [assembly: System.Reflection.AssemblyProductAttribute("NHSCapacityAndDemandPlanner")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NHSCapacityAndDemandPlanner")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
