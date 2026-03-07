@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NHSCapacityAndDemandPlanner</name>
+    </assembly>
+    <members>
+        <member name="M:NHSCapacityAndDemandPlanner.HomeWindow.button1_Click(System.Object,System.EventArgs)">
+            <summary>
+            Opens scheduler window
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:NHSCapacityAndDemandPlanner.HomeWindow.panel1_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            ====================================================================================================================================================
+            I want to make this so that when the button 3 is clicked, it shows the panel and it takes the size of the text that is inside of it.
+            If there are no notifications, there will be text in the pannel saying no notifications.
+            This will be set up with an alert system that will be on every window as will the notification centre. It does not need to be done until later tho.
+            ===================================================================================================================================================
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:NHSCapacityAndDemandPlanner.HomeWindow.button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Opens the Statistics window
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:NHSCapacityAndDemandPlanner.HomeWindow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NHSCapacityAndDemandPlanner.HomeWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NHSCapacityAndDemandPlanner.HomeWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:NHSCapacityAndDemandPlanner.Program.Main">
+            <summary>
+             The main entry point for the application.
+            </summary>
+        </member>
+        <member name="T:NHSCapacityAndDemandPlanner.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:NHSCapacityAndDemandPlanner.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:NHSCapacityAndDemandPlanner.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="F:NHSCapacityAndDemandPlanner.SchedulerWindow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NHSCapacityAndDemandPlanner.SchedulerWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NHSCapacityAndDemandPlanner.SchedulerWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:NHSCapacityAndDemandPlanner.SplashWindow.components">
+            <summary>
+             Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NHSCapacityAndDemandPlanner.SplashWindow.Dispose(System.Boolean)">
+            <summary>
+             Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NHSCapacityAndDemandPlanner.SplashWindow.InitializeComponent">
+            <summary>
+             Required method for Designer support - do not modify
+             the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:NHSCapacityAndDemandPlanner.StatisticsWindow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:NHSCapacityAndDemandPlanner.StatisticsWindow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:NHSCapacityAndDemandPlanner.StatisticsWindow.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:NHSCapacityAndDemandPlanner.ApplicationConfiguration">
+            <summary>
+             Bootstrap the application configuration.
+            </summary>
+        </member>
+        <member name="M:NHSCapacityAndDemandPlanner.ApplicationConfiguration.Initialize">
+            <summary>
+             Bootstrap the application as follows:
+             <code>
+             global::System.Windows.Forms.Application.EnableVisualStyles();
+             global::System.Windows.Forms.Application.SetCompatibleTextRenderingDefault(false);
+             global::System.Windows.Forms.Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            </code>
+            </summary>
+        </member>
+    </members>
+</doc>

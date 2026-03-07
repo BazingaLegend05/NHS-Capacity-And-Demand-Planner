@@ -1,8 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <ItemGroup>
-        <Compile Update="Form1.cs">
-            <SubType>Form</SubType>
-        </Compile>
-    </ItemGroup>
+  <ItemGroup>
+    <Compile Update="SchedulerWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="SplashWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="HomeWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="StatisticsWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>
