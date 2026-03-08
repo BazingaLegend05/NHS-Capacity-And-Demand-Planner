@@ -14,17 +14,20 @@ namespace NHSCapacityAndDemandPlanner
 {
     public partial class SchedulerWindow : Form
     {
+        public string SelectedTable { get; set; }
+        public string DataRoute { get; set; }
         public SchedulerWindow()
         {
             InitializeComponent();
         }
         private void SchedulerWindow_Load(object sender, EventArgs e)
         {
+            DropDown.SelectedIndex = 0;
             WriteTable writeTable = new WriteTable();
             ReadJSON readJSON = new ReadJSON();
             string fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "JSONData", "ClinicianTimeTableWeek1.json");
-
-            writeTable.WriteToTable(DynamicTable, readJSON.JsonTo2DArray(fullPath));
+            var result = readJSON.JsonTo2DArray(fullPath);
+            writeTable.WriteToTable(DynamicTable, result.headers, result.data);
         }
         private void BackButton_Click(object sender, EventArgs e)
         {
@@ -47,13 +50,27 @@ namespace NHSCapacityAndDemandPlanner
         {
 
         }
+
+        private void DropDown_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SelectedTable = DropDown.SelectedItem.ToString();
+            if(SelectedTable == "Clinitian TimeTable") DataRoute = "ClinicianTimeTableWeek1.json";
+            if(DataRoute != null)
+            {
+                WriteTable writeTable = new WriteTable();
+                ReadJSON readJSON = new ReadJSON();
+                string fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "JSONData", DataRoute);
+                var result = readJSON.JsonTo2DArray(fullPath);
+                writeTable.WriteToTable(DynamicTable, result.headers, result.data);
+            }
+        }
     }
     /// <summary>
     /// Universal class to write to the table using the json files provided.
     /// </summary>
     public class WriteTable
     {
-        public void WriteToTable(DataGridView table, string[,] data)
+        public void WriteToTable(DataGridView table, string[] headers, string[,] data)
         {
             int rows = data.GetLength(0);
             int cols = data.GetLength(1);
@@ -63,17 +80,41 @@ namespace NHSCapacityAndDemandPlanner
             // Add columns
             for (int c = 0; c < cols; c++)
             {
-                table.Columns.Add($"Column{c}", $"Column {c + 1}");
+                table.Columns.Add($"Column{c}", headers[c]);
             }
             // Add rows
             for (int r = 0; r < rows; r++)
             {
+
                 string[] rowData = new string[cols];
                 for (int c = 0; c < cols; c++)
                 {
                     rowData[c] = data[r, c];
                 }
-                table.Rows.Add(rowData);
+
+                int rowIndex = table.Rows.Add(rowData);
+
+                for (int c = 0; c<cols ; c++)
+                {
+                    string cellValue = rowData[c]?.ToLower() ?? "";
+
+                    if (cellValue.Contains("annual leave"))
+                    {
+                        table.Rows[rowIndex].Cells[c].Style.BackColor = Color.Yellow;
+                    }
+                    else if (cellValue.Contains("study leave"))
+                    {
+                        table.Rows[rowIndex].Cells[c].Style.BackColor = Color.Red;
+                    }
+                    else if (cellValue.Contains("sick"))
+                    {
+                        table.Rows[rowIndex].Cells[c].Style.BackColor = Color.LightGreen;
+                    }
+                    else if (cellValue.Contains("theatre"))
+                    {
+                        table.Rows[rowIndex].Cells[c].Style.BackColor = Color.LightBlue;
+                    }
+                }
             }
         }
     }
@@ -82,7 +123,7 @@ namespace NHSCapacityAndDemandPlanner
     /// </summary>
     public class ReadJSON
     {
-        public string[,] JsonTo2DArray(string filePath)
+        public (string[] headers, string[,] data) JsonTo2DArray(string filePath)
         {
             string fileContent = File.ReadAllText(filePath);
 
@@ -91,7 +132,9 @@ namespace NHSCapacityAndDemandPlanner
                 JsonElement root = doc.RootElement.GetProperty("clinitianTimeTableWeek1");
                 int rowCount = root.GetArrayLength();
 
-                int colCount = root[0].EnumerateObject().Count();
+                var firstObject = root[0];
+                string[] headers = firstObject.EnumerateObject().Select(p => p.Name).ToArray();
+                int colCount = headers.Length;
 
                 string[,] data = new string[rowCount, colCount];
 
@@ -104,7 +147,7 @@ namespace NHSCapacityAndDemandPlanner
                         j++;
                     }
                 }
-                return data;
+                return (headers, data);
 
             }
         }
