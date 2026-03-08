@@ -8,15 +8,15 @@
     "**/platforms"
   ],
   
-    "clinitianTimeTableWeek1":[
+    "clinicianTimeTableWeek1":[
     {
       "Clinician": "1",
-      "Monday AM": "null",
-      "Monday PM": "null",
+      "Monday AM": "",
+      "Monday PM": "",
       "Tuesday AM": "study leave",
       "Tuesday PM": "study leave",
-      "Wednesday AM": "null",
-      "Wednesday PM": "null",
+      "Wednesday AM": "",
+      "Wednesday PM": "",
       "Thursday AM": "annual leave",
       "Thursday PM": "annual leave",
       "Friday AM": "annual leave",
@@ -55,44 +55,44 @@
       "Thursday PM": "annual leave",
       "Friday AM": "annual leave",
       "Friday PM": "annual leave",
-      "Saturday AM": "null",
+      "Saturday AM": "",
       "Saturday PM": "sick",
-      "Sunday AM": "null",
-      "Sunday PM": "null"
+      "Sunday AM": "",
+      "Sunday PM": ""
     },
       {
         "Clinician": "4",
         "Monday AM": "MnNew",
         "Monday PM": "MwRev",
-        "Tuesday AM": "null",
-        "Tuesday PM": "null",
+        "Tuesday AM": "",
+        "Tuesday PM": "",
         "Wednesday AM": "MWM",
-        "Wednesday PM": "null",
-        "Thursday AM": "null",
-        "Thursday PM": "null",
-        "Friday AM": "Theatre",
-        "Friday PM": "null",
-        "Saturday AM": "null",
-        "Saturday PM": "null",
-        "Sunday AM": "null",
-        "Sunday PM": "null"
+        "Wednesday PM": "",
+        "Thursday AM": "",
+        "Thursday PM": "",
+        "Friday AM": "theatre",
+        "Friday PM": "",
+        "Saturday AM": "",
+        "Saturday PM": "",
+        "Sunday AM": "",
+        "Sunday PM": ""
       },
       {
         "Clinician": "5",
-        "Monday AM": "null",
-        "Monday PM": "null",
-        "Tuesday AM": "null",
-        "Tuesday PM": "null",
-        "Wednesday AM": "null",
+        "Monday AM": "",
+        "Monday PM": "",
+        "Tuesday AM": "",
+        "Tuesday PM": "",
+        "Wednesday AM": "",
         "Wednesday PM": "MwWed",
-        "Thursday AM": "Theatre",
-        "Thursday PM": "null",
+        "Thursday AM": "theatre",
+        "Thursday PM": "",
         "Friday AM": "MwFri",
-        "Friday PM": "null",
-        "Saturday AM": "null",
-        "Saturday PM": "null",
-        "Sunday AM": "null",
-        "Sunday PM": "null"
+        "Friday PM": "",
+        "Saturday AM": "",
+        "Saturday PM": "",
+        "Sunday AM": "",
+        "Sunday PM": ""
       }
     ]
 }

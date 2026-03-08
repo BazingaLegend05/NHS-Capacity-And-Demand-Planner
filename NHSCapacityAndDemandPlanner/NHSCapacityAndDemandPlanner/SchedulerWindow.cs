@@ -23,10 +23,12 @@ namespace NHSCapacityAndDemandPlanner
         private void SchedulerWindow_Load(object sender, EventArgs e)
         {
             DropDown.SelectedIndex = 0;
+            DataRoute = "ClinicianTimeTableWeek1.json";
             WriteTable writeTable = new WriteTable();
             ReadJSON readJSON = new ReadJSON();
-            string fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "JSONData", "ClinicianTimeTableWeek1.json");
-            var result = readJSON.JsonTo2DArray(fullPath);
+            string fileRoot = readJSON.GetRoot(DataRoute);
+            string fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "JSONdata", "ClinicianTimeTableWeek1.json");
+            var result = readJSON.JsonTo2DArray(fullPath, fileRoot);
             writeTable.WriteToTable(DynamicTable, result.headers, result.data);
         }
         private void BackButton_Click(object sender, EventArgs e)
@@ -54,13 +56,17 @@ namespace NHSCapacityAndDemandPlanner
         private void DropDown_SelectedIndexChanged(object sender, EventArgs e)
         {
             SelectedTable = DropDown.SelectedItem.ToString();
-            if(SelectedTable == "Clinitian TimeTable") DataRoute = "ClinicianTimeTableWeek1.json";
-            if(DataRoute != null)
+            if(SelectedTable == "Clinitian Timetable") DataRoute = "ClinicianTimeTableWeek1.json";
+            else if (SelectedTable == "Theatre Timetable") DataRoute = "TheatreTimeTableWeek1.json";
+
+            if (DataRoute != null)
             {
+                DynamicTable.DataSource = null;
                 WriteTable writeTable = new WriteTable();
                 ReadJSON readJSON = new ReadJSON();
-                string fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "JSONData", DataRoute);
-                var result = readJSON.JsonTo2DArray(fullPath);
+                string fullPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "JSONdata", DataRoute);
+                string fileRoot = readJSON.GetRoot(DataRoute);
+                var result = readJSON.JsonTo2DArray(fullPath, fileRoot);
                 writeTable.WriteToTable(DynamicTable, result.headers, result.data);
             }
         }
@@ -123,13 +129,33 @@ namespace NHSCapacityAndDemandPlanner
     /// </summary>
     public class ReadJSON
     {
-        public (string[] headers, string[,] data) JsonTo2DArray(string filePath)
+        public string GetRoot(string DataRoute)
+        {
+            string root = "";
+            if (DataRoute == "ClinicianTimeTableWeek1.json")
+            {
+                root = "clinicianTimeTableWeek1";
+            }
+            else if(DataRoute == "ClinicianTimeTableWeek2.json") { root = "clinitcianTimeTableWeek2";
+            }
+            else if (DataRoute == "TheatreTimeTableWeek1.json")
+            {
+                root = "theatreTimeTableWeek1";
+            }
+            else if (DataRoute == "TheatreTimeTableWeek2.json")
+            {
+                root = "theatreTimeTableWeek2";
+            }
+
+            return root;
+        }
+        public (string[] headers, string[,] data) JsonTo2DArray(string filePath, string fileRoot)
         {
             string fileContent = File.ReadAllText(filePath);
 
             using (JsonDocument doc = JsonDocument.Parse(fileContent))
             {
-                JsonElement root = doc.RootElement.GetProperty("clinitianTimeTableWeek1");
+                JsonElement root = doc.RootElement.GetProperty(fileRoot);
                 int rowCount = root.GetArrayLength();
 
                 var firstObject = root[0];

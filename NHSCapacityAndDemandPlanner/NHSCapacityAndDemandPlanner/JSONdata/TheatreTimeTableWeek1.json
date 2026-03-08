@@ -1,0 +1,30 @@
+{
+  "exclude": [
+    "**/bin",
+    "**/bower_components",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ],
+
+  "theatreTimeTableWeek1": [
+    {
+      "Theatre": "DTH9",
+      "Monday AM": "",
+      "Monday PM": "",
+      "Tuesday AM": "",
+      "Tuesday PM": "",
+      "Wednesday AM": "",
+      "Wednesday PM": "",
+      "Thursday AM": "theatre",
+      "Thursday PM": "",
+      "Friday AM": "theatre",
+      "Friday PM": "",
+      "Saturday AM": "",
+      "Saturday PM": "",
+      "Sunday AM": "",
+      "Sunday PM": ""
+    }
+  ]
+}

@@ -33,6 +33,15 @@
     <None Update="JSONdata\ClinicianTimeTableWeek1.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="JSONdata\ClinicianTimeTableWeek2.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="JSONdata\TheatreTimeTableWeek1.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="JSONdata\TheatreTimeTableWeek2.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
